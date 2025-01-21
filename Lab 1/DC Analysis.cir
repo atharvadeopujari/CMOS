@@ -1,0 +1,10 @@
+**DC ANALYSIS**
+Vd 2 0 5
+R1 2 1 2k
+R2 1 0 2k
+.dc Vd 0 5 0.1
+.control 
+run
+plot V(1) V(2)
+.endc
+.end
